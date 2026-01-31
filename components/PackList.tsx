@@ -13,4 +13,10 @@ interface PackListProps{
     packs: PokemonPack[]
 }
 
-export function PackList()
+export function PackList({packs}: PackListProps){
+    <div className="max-w-7xl mx-auto px-4 py-8">
+        <div>
+
+        </div>
+    </div>
+}
