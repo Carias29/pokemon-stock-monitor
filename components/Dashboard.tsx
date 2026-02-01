@@ -1,5 +1,6 @@
 import { Package, Bell, TrendingUp} from 'lucide-react'
 import { StatsCard } from './StatsCard'
+import { PackList } from './PackList'
 
 export function Dashboard(){
     return(
@@ -27,6 +28,12 @@ export function Dashboard(){
                 icon={<TrendingUp className="w-6 h-6"/>}
                 iconColor='bg-orange-500'
             />
+        </div>
+        <div className="bg-white rounded-lg shadow-md">
+            <div className="px-6 py-4 border-b border-gray-200">
+                <h2 className="text-xl">Tracked Pokemon Packs</h2>
+            </div>
+            <PackList />
         </div>
     </div>
     );
